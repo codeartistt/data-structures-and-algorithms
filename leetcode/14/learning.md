@@ -1,7 +1,7 @@
 indexOf = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 javascriptStringAsArrays = https://nullprogram.com/blog/2012/11/15/
 
-Problem
+Problem 1/2
     The thing is I don't know how $indexOf works.
 Solution
     Let's learn $indexOf
@@ -38,3 +38,16 @@ Example
     console.log('abcde'.indexOf('abcde'))       // 0
     console.log('abcde'.indexOf('cde'))         // 2 
     console.log('abcde'.indexOf('acde'))        // -1
+
+
+
+
+
+
+
+Problem 2/2
+    How while loop works
+Solution
+    Let's learn while loop
+
+    The while loop loops through a block of code as long as a specified condition is true.
