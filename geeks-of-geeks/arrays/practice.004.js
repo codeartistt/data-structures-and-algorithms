@@ -1,23 +1,28 @@
-// JavaScript code for the approach
-// Write a program to sort the given array
 
-/**
- * 
- * UNSORTED ARRAY
- * 2 1 4 3
- * 
- * SORTED ARRAY
- * 1 2 3 4
- * 
- */
+// Find subarray with given sum | Set 1 (Non-negative Numbers)
 
+function subArraySum(arr, n, sum) {
 
-function selectionSort(arr) {
-    let length = arr.length;
+    for (let i = 0; i < n; i++) {
+        let inner_sum = arr[i];
 
+        for(let j = i + 1; j < n; j++) {
+
+            inner_sum = inner_sum + arr[j];
+
+            if(inner_sum === sum) {
+                console.log(`Sum between ${i} and ${j} matches`)
+                return;
+            }
+        }
+
+    }
+    console.log('No subarray found');
     
-
 }
 
 
-selectionSort([0, 23, 14, 12, 9 ])
+let arr = [15, 2, 4, 8, 9, 5, 10, 23];
+let n = arr.length;
+let sum = 0;
+subArraySum(arr, n, sum);
