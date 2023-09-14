@@ -16,7 +16,6 @@ function binarySearch(arr, toSearch) {
             } else {
                 left = mid + 1;
             }
-
         }
 
         return -1;
