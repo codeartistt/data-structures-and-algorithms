@@ -4,7 +4,10 @@ function binarySearch(arr, toSearch) {
         let right = arr.length - 1;
         let mid;
 
+        // evaluate this condition like if statement
         while (right >= left) {
+
+            // The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number.
             mid = left + Math.floor((right - left) / 2);
 
             if (arr[mid] == toSearch) {
